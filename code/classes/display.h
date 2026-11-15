@@ -1,3 +1,5 @@
+//display.h
+#pragma once;
 #include <iostream>
 #include <vector>
 
@@ -25,6 +27,7 @@ public:
       grid.push_back(collumn);
     }
   }
+
 
   void set_pixel(int x,int y,bool state) {
     grid[x][y]=state;
@@ -80,16 +83,3 @@ public:
   }
 };
 
-int main() {
-  Display test_display(10,10);
-  test_display.set_pixel(3,3,true);
-  test_display.set_pixel(4,3,true);
-  /*shape being placed
-  121
-  101
-  121
-  */
-  test_display.place_shape(3,3,{{1,1,1},{2,0,2},{1,1,1}});
-  test_display.print(true);
-  return 0;
-}
