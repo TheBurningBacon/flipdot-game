@@ -1,5 +1,5 @@
 //display.h
-#pragma once;
+#pragma once
 #include <iostream>
 #include <vector>
 

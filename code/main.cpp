@@ -9,6 +9,32 @@
 
 using namespace std;
 
+void debug_inputs(unordered_map<string,int>& actions) {
+  string input;
+  cin >> input;
+  
+  string val;
+  string typ;
+  bool in_val = false;
+  for (char c:input) {
+    if (c==',') {
+      actions[typ]=stoi(val);
+      val="";
+      typ="";
+      in_val=false;
+    }
+    else if (c==':') {
+      in_val=true;
+    }
+    else if (in_val) {
+      val+=c;
+    }
+    else {
+      typ+=c;
+    }
+  }
+
+}
 
 
 
@@ -48,6 +74,13 @@ extern "C" void app_main(void) {
     
     //vTaskDelay(pdMS_TO_TICKS(1000));
     screen.print(true);
+    debug_inputs(actions);
   }
   
+}
+
+
+int main() {
+  app_main();
+  return 0;
 }
