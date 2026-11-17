@@ -107,6 +107,8 @@ vector<vector<int>> get_letter(char c) {
     if (c == 'Z') {
         return {{1,1,0,0,1},{1,0,1,0,1},{1,0,0,1,1}};
     }
+
+    return {};
 }
 
 void write_text(Display& screen,string text,int x,int y) {

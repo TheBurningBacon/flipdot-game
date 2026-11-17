@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include <memory>
 //#include "freertos/FreeRTOS.h"
 //#include "freertos/task.h"
 #include "classes/scene.h"
@@ -58,19 +59,17 @@ extern "C" void app_main(void) {
   };
 
 
-  MainMenu main_menu;
-  Scene test;
-  string scene="test";
-  
 
+  unordered_map<string,unique_ptr<Scene>> scenes;
+  scenes["main"]=make_unique<MainMenu>();
+  scenes["test"]=make_unique<Scene>();
+  string scene="main";
+  
+  //call for the first scene to initialize
+  scenes[scene]->enter_scene(screen);
   //main loop
   while (power_on) {
-    if (scene=="test") {
-      test.update(screen,actions,scene);
-    }
-    if (scene=="main") {
-      main_menu.update(screen,actions,scene);
-    }
+    scenes[scene]->update(screen,actions,scene);
     
     //vTaskDelay(pdMS_TO_TICKS(1000));
     screen.print(true);
