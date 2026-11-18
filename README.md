@@ -1,1 +1,2 @@
 # flipdot-game
+https://www.amazon.com/Vrabocry-5mm-Multicolor-Transparent-Electronics/dp/B0G3WXYHZ9/ref=sr_1_19?dib=eyJ2IjoiMSJ9.YkEO7XAPKjlZsLyi8B860hBAXO7Uvp_shMSVXRBF1efKzzUcbPMEuJ0PGXpPNwf6IelBddnRjqYe_N7O1YqWMCQu17DS6xlzqJZac00ItTD97GL39V1WVLwq2L5kfS7y-BUgJTdBpOdrRrbMG67gblvqBlGQvzUOTaQLBMu-jv4cLZALWOHNr7Xl5PIjy9LCDgn-0CjOzITFFFKw2GhDa5EQ3u8sm5mKvH5bfS_3Evg.f8BOCA0tSohCEl7OE_5-V7kHxtZAq-0_U1q5ILPOM2A&dib_tag=se&keywords=led%2Bassortment&qid=1795045347&refinements=p_n_g-101015350497111%3A121479021011&rnid=121479012011&sr=8-19&th=1
